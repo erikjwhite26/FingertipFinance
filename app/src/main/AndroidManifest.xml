@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.eze.fingertipfinance" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/fingertip_finance"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Finance_Summary"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Finance_Add_Input"
+            android:label="@string/title_activity_finance__add__input" >
+        </activity>
+        <activity
+            android:name=".Finance_Calendar"
+            android:label="@string/title_activity_finance__calendar" >
+        </activity>
+        <activity
+            android:name=".Finance_Custom_Calendar"
+            android:label="@string/title_activity_finance__custom_calendar" >
+        </activity>
+
+        <receiver android:name=".Finance_Widget" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/finance__widget_info" />
+        </receiver>
+
+        <activity
+            android:name=".Finance_Widget_Activity"
+            android:label="@string/title_activity_finance__widget_" >
+        </activity>
+    </application>
+
+</manifest>

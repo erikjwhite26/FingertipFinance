@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fingertip Finance</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="income_summary">Income(s):</string>
+    <string name="bill_summary">Bill(s):</string>
+    <string name="add_name">Name:</string>
+    <string name="add_amount">Amount:</string>
+    <string name="add_occurs">Occurs:</string>
+    <string name="add_date_hint">10/17/2015</string>
+    <string name="add_occurs_weekly">Weekly</string>
+    <string name="add_occurs_biweekly">Bi-weekly</string>
+    <string name="add_occurs_monthly">Monthly</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="title_activity_finance__add__input">Finance_Add_Input</string>
+    <string name="new_income">New Income</string>
+    <string name="new_bill">New Bill</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total">Total Per Month:</string>
+    <string name="delete">Delete</string>
+    <string name="action_sort_amount">Sort By Amount</string>
+    <string name="action_sort_name">Sort By Name</string>
+    <string name="title_activity_finance__calendar">Finance_Calendar</string>
+    <string name="title_activity_view_pager_fragment">ViewPagerFragmentActivity</string>
+    <string name="action_calendar">Calendar View</string>
+    <string name="action_summary">Summary View</string>
+    <string name="action_sort_date">Sort By Date</string>
+    <string name="total_amount">Total:</string>
+    <string name="add_occurs_onetime">One-time</string>
+    <string name="balance_today">Balance Today:</string>
+    <string name="past_amounts_added">Past Amounts Added:</string>
+    <string name="add_past_amount">Add Amount</string>
+    <string name="clear_past_amounts">Clear Past Amounts</string>
+    <string name="days">Sun        Mon        Tue        Wed        Thu        Fri        Sat</string>
+    <string name="month">Month</string>
+    <string name="day">day</string>
+    <string name="title_activity_finance__custom_calendar">Finance_Custom_Calendar</string>
+    <string name="add_widget">Add widget</string>
+    <string name="balance">Balance:</string>
+    <string name="income">Income:</string>
+    <string name="bill">Bill:</string>
+    <string name="title_activity_finance__widget_">Finance_Widget_Activity</string>
+    <string name="amount">$100.00</string>
+    <string name="fingertip">Fingertip</string>
+    <string name="finance">Finance</string>
+
+</resources>

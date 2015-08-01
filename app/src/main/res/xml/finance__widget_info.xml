@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="60dp" android:minHeight="40dp" android:updatePeriodMillis="60000"
+    android:previewImage="@drawable/fingertip_finance"
+    android:initialLayout="@layout/finance__widget" android:widgetCategory="home_screen"
+    android:initialKeyguardLayout="@layout/finance__widget"></appwidget-provider>

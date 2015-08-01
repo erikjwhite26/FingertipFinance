@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:id="@+id/finance_add">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/add_save"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/add_name"
+                android:text="@string/add_name"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <EditText
+                android:id="@+id/add_name_edit"
+                android:layout_below="@+id/add_name"
+                android:inputType="textCapWords|textAutoCorrect"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+            <TextView
+                android:id="@+id/add_amount"
+                android:text="@string/add_amount"
+                android:layout_below="@+id/add_name_edit"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
+
+            <EditText
+                android:id="@+id/add_amount_edit"
+                android:ems="8"
+                android:inputType="numberDecimal"
+                android:layout_below="@+id/add_amount"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <TextView
+                android:id="@+id/add_occurs"
+                android:text="@string/add_occurs"
+                android:layout_below="@+id/add_amount_edit"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content" />
+
+            <Button
+                android:id="@+id/add_date"
+                android:hint="@string/add_date_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/add_occurs"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:layout_alignParentLeft="@+id/add_occurs"
+                android:onClick="showDatePickerDialog"/>
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/add_occur_rb"
+                android:layout_below="@+id/add_date"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_occur_onetime"
+                    android:text="@string/add_occurs_onetime"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_occur_weekly"
+                    android:text="@string/add_occurs_weekly"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_occur_biweekly"
+                    android:text="@string/add_occurs_biweekly"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_occur_monthly"
+                    android:text="@string/add_occurs_monthly"/>
+
+            </RadioGroup>
+
+            <Button
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/add_past_amount"
+                android:id="@+id/add_amount_button"
+                android:layout_alignBottom="@+id/add_amount_edit"
+                android:layout_alignEnd="@+id/add_name_edit"
+                android:layout_marginLeft="30dp"
+                android:layout_alignParentStart="false"
+                android:layout_toEndOf="@id/add_amount_edit" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/past_amounts_added"
+                android:id="@+id/add_past_amounts"
+                android:layout_alignBottom="@+id/add_occurs"
+                android:layout_alignEnd="@+id/add_name_edit"
+                android:layout_alignStart="@id/add_amount_button" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/scrollView"
+                android:layout_below="@+id/add_past_amounts"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_alignBottom="@+id/add_occur_rb"
+                android:layout_alignStart="@+id/add_past_amounts"
+                android:layout_alignEnd="@+id/add_past_amounts">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/add_past_amounts_list" />
+
+            </ScrollView>
+
+        </RelativeLayout>
+    </ScrollView>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/save"
+            android:textStyle="bold"
+            android:id="@+id/add_save"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:enabled="false"
+            android:background="@android:color/holo_green_light"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="2dp"/>
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:textStyle="bold"
+            android:id="@+id/add_cancel"
+            android:background="@android:color/holo_red_light"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin" />
+
+</RelativeLayout>

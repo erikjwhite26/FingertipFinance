@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:ems="8"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/dialog_add_amount" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textStyle="bold"
+        android:id="@+id/dialog_add_add"
+        android:layout_below="@+id/dialog_add_amount"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:background="@android:color/holo_green_light"/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textStyle="bold"
+        android:id="@+id/dialog_add_cancel"
+        android:background="@android:color/holo_red_light"
+        android:layout_below="@+id/dialog_add_amount"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="@dimen/activity_vertical_margin"/>
+</RelativeLayout>

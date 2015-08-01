@@ -1,0 +1,28 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".Finance_Summary" >
+    <item android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_sort_amount"
+        android:title="@string/action_sort_amount"
+        android:orderInCategory="1"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_sort_date"
+        android:title="@string/action_sort_date"
+        android:orderInCategory="2"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_sort_name"
+        android:title="@string/action_sort_name"
+        android:orderInCategory="3"
+        android:showAsAction="never" />
+
+    <item android:id="@+id/action_calendar"
+        android:title="@string/action_calendar"
+        android:orderInCategory="4"
+        android:showAsAction="never" />
+</menu>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:ignore="InefficientWeight,ContentDescription" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60sp"
+        android:gravity="left|top"
+        android:height="60sp"
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/month_header"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/prevMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_alignParentStart="true"
+            android:src="@android:drawable/ic_media_previous"
+            android:layout_marginStart="10sp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/currentMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/prevMonth"
+            android:layout_marginBottom="15dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FFFFFF"
+            android:text="@string/month"
+            android:singleLine="true">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/nextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_alignParentEnd="true"
+            android:src="@android:drawable/ic_media_next"
+            android:layout_marginEnd="10sp">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/calendarheader">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sunday"
+            android:text="   Sun     Mon    Tue     Wed    Thu     Fri     Sat   "
+            android:isScrollContainer="false"
+            android:layout_centerHorizontal="true"
+            android:textAppearance="@android:style/TextAppearance.Medium"/>
+
+    </RelativeLayout>
+
+    <GridView
+        android:id="@+id/calendar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="0dp"
+        android:numColumns="7" >
+    </GridView>
+
+</LinearLayout>
